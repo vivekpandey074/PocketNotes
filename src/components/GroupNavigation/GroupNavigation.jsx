@@ -14,7 +14,7 @@ export default function GroupNavigation({
   const [showModal, setShowModal] = useState(false);
   const [active, setActive] = useState(-1);
 
-  const isMobile = window.innerWidth <= 600;
+  const isMobile = window.innerWidth <= 650;
 
   return (
     <>

@@ -55,6 +55,8 @@
     font-size: 3vh;
  font-family: "Roboto", sans-serif;
  font-weight: 400;
+ outline: none;
+ border: none;
  
     
 }
@@ -86,7 +88,7 @@ box-sizing: border-box;
 
 
 .notes-list{
- padding: 4vh 6vh 4vh 6vh;
+ padding: 1vh 6vh 4vh 6vh;
  overflow-y: auto;
  height: 60vh;
  
@@ -97,8 +99,8 @@ box-sizing: border-box;
   flex-direction: row;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 3vh;
-  margin-top: 6vh;
+  font-size: 2.8vh;
+  margin-top:6vh;
   
 }
 
@@ -124,7 +126,7 @@ overflow-wrap: anywhere;
 /* Media Queries */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .main-box{
       width: 100%;
       

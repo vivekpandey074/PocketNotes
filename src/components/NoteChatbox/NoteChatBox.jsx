@@ -55,7 +55,7 @@ export default function NoteChatBox({
     setText("");
   };
 
-  const isMobile = window.innerWidth <= 600;
+  const isMobile = window.innerWidth <= 650;
 
   if (!currentGrp) return <DefaultNoteBoxPage />;
 

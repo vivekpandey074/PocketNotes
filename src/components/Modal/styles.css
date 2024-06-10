@@ -125,7 +125,7 @@
 
 
  /* Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .modal{
         width: 80%;
         margin-top: 25vh;
