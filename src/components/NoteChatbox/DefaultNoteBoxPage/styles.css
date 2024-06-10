@@ -1,0 +1,61 @@
+.default-note-main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7ecdc;
+  width: 70%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.default-note-box {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.pocket-notes-text{
+    font-size: 6vh;
+    
+}
+
+
+.default-note-box-img {
+  height: 40vh;
+  
+}
+
+.default-note-box-text {
+    width: 90%;
+     color: #292929;
+     font-size: 2.4vh;
+     word-spacing: 1px;
+     margin-top: 4px;
+     
+}
+
+.encrypt-text-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   gap: 4px;
+   position: absolute;
+   bottom: 6px;
+
+}
+
+.encrypt-text-box> img{
+    width: 3vh;
+    height: 3vh;
+}
+.encrypt-text-box>p{
+    font-size: 2.4vh;
+}
+

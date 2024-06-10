@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/* General utilities classes */
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.display-flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.align-items-center{
+align-items: center;
+}
+
+.border{
+    border:2px solid red;
+}
+
+.customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; 
+  }
+
+  .customized-scrollbar::-webkit-scrollbar-thumb {
+    background:grey;
+  }
+
+
+
+ 
