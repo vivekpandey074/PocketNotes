@@ -19,7 +19,9 @@ export default function GroupNavigation({
   return (
     <>
       <div
-        className={`GroupBox ${isMobile && !showGrpNavigation ? "hidden" : ""}`}
+        className={`GroupBox  ${
+          isMobile && !showGrpNavigation ? "hidden" : ""
+        }`}
       >
         <h2 className="Pocket-Notes-Heading">Pocket Notes</h2>
 
