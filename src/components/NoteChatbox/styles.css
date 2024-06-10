@@ -178,5 +178,8 @@ overflow-wrap: anywhere;
     .notes-grpname-bar{
       gap: 0.5vh;
     }
+    .notes-grpname-bar{
+      height: 6vh;
+    }
 
   }
