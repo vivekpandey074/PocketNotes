@@ -65,20 +65,46 @@
 
   .default-note-main-box{
     display: none;
-   
   }
+
+ 
 }
 
 
-@media only screen and (min-width: 651px) and (max-width: 1400px) {
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
 	
 
   .default-note-box-img {
-    height: 30vh;
+    height: 20vh;
     
   }
+  .pocket-notes-text{
+    font-size: 4vh;
+}
+  
+.default-note-box-text {
+  font-size: 1.6vh;
+     
+  }
+
+
+}
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+	
+
+  .default-note-box-img {
+    height: 25vh;
+    
+  }
+
+  .pocket-notes-text{
+    font-size: 5vh;
+}
   
 
-
+.default-note-box-text {
+font-size: 2vh;
+   
+}
 
 }

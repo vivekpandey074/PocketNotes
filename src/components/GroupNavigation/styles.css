@@ -140,18 +140,29 @@
   
   }
 
-  @media only screen and (min-width: 651px) and (max-width: 1400px) {
-	
 
-    .default-note-box-img {
-      height: 30vh;
-      
-    }
-    
+
+  @media only screen and (min-width: 651px) and (max-width: 1000px) {
+	
     .create-notes-group-btn{
-        font-size: 2.5vh;
+     font-size: 2vh;
     }
+    .group-name{
+        font-size:2.3vh ;
+        margin-left: 1.4vh;
+    }
+ 
+  }
+  @media only screen and (min-width: 1001px) and (max-width: 1400px) {
+      
   
+    .create-notes-group-btn{
+    font-size: 2.4vh;
+    }
+    .group-name{
+        font-size:2.4vh ;
+        margin-left: 1.6vh;
+    }
   
   
   }
