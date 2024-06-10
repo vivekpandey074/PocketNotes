@@ -1,5 +1,6 @@
 .GroupBox{
     display: flex;
+    flex-direction: column;
     width: 30%;
     height: 100vh;
     box-sizing: border-box;
@@ -119,6 +120,7 @@
 @media only screen and (max-width: 600px) {
     .GroupBox{
         width: 100%;  
+       
         
     }
     .grp-wrapper{
@@ -135,4 +137,5 @@
         background-color: white;
     }
     
+  
   }

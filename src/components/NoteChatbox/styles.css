@@ -117,13 +117,66 @@ overflow-wrap: anywhere;
 }
 
 
-
+.back-btn{
+  display: none;
+}
 
 /* Media Queries */
 
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .main-box{
-      display: none;
+      width: 100%;
+      
     }
-  } */
+
+    .notes-list{
+      padding: 1vh;
+    }
+    .notes-list-item{
+      margin-top: 2vh;
+    }
+
+    .note-para{
+      font-size: 1.9vh;
+    }
+
+    .meta-data{
+      font-size: 1.9vh;
+    }
+
+    .notes-input-box{
+      height: 20vh;
+      padding: 1vh 1.5vh 1vh 1.5vh;
+    }
+    .notes-list{
+      height: 70vh;
+    }
+    .notes-input-box-send-btn{
+      height: 3vh;
+      bottom: 3vh;
+      right: 4vh;
+    }
+    .notes-input-text-area{
+      padding: 1vh 1.5vh 1vh 1.5vh;
+      font-size: 2.5vh;
+    }
+    .notes-input-text-area::placeholder{
+      font-size: 2.5vh;
+    }
+    .back-btn{
+      display: inline-block;
+      height: 2vh;
+      width: 4vh;
+
+    }
+    .notes-grp-icon{
+      height: 6vh;
+      font-size: 2.4vh;
+    }
+
+    .notes-grpname-bar{
+      gap: 0.5vh;
+    }
+
+  }

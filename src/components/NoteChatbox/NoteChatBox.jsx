@@ -4,6 +4,7 @@ import "../../index.css";
 import DefaultNoteBoxPage from "./DefaultNoteBoxPage/DefaultNoteBoxPage.jsx";
 import sendbuttonblack from "../../assets/sendbuttonblack.svg";
 import sendbutton from "../../assets/sendbutton.svg";
+import backbtn from "../../assets/backbtn.svg";
 
 function formatDateTime(date) {
   const optionsDate = { day: "numeric", month: "long", year: "numeric" };
@@ -23,14 +24,15 @@ export default function NoteChatBox({
   currentGrp,
   notesGrpArray,
   setNotesGrpArray,
-  setCurrentGrp
+  setCurrentGrp,
+  setShowNotesChat,
+  setShowGrpNavigation,
+  showNotesChat,
 }) {
   const [text, setText] = useState("");
 
   const now = new Date();
   const { formattedDate, formattedTime } = formatDateTime(now);
-
-
 
   //handle submission
   const handleNoteSubmit = () => {
@@ -40,28 +42,37 @@ export default function NoteChatBox({
       Content: text,
     };
 
-
     const updatedGrpArray = notesGrpArray.map((item) => {
       if (item.id === currentGrp.id) {
-
-        setCurrentGrp({...item,Notes:[...item.Notes,noteObj]});
-          return {...item,Notes:[...item.Notes,noteObj]}
-      }else{
+        setCurrentGrp({ ...item, Notes: [...item.Notes, noteObj] });
+        return { ...item, Notes: [...item.Notes, noteObj] };
+      } else {
         return item;
       }
     });
-    setNotesGrpArray(()=>[...updatedGrpArray]);
-    localStorage.setItem("NotesGrpArray",JSON.stringify(updatedGrpArray));
+    setNotesGrpArray(() => [...updatedGrpArray]);
+    localStorage.setItem("NotesGrpArray", JSON.stringify(updatedGrpArray));
     setText("");
   };
 
-
+  const isMobile = window.innerWidth <= 600;
 
   if (!currentGrp) return <DefaultNoteBoxPage />;
 
   return (
-    <div className="main-box">
+    <div className={`main-box ${isMobile && !showNotesChat ? "hidden" : ""}`}>
       <div className="notes-grpname-bar">
+        <span>
+          <img
+            src={backbtn}
+            alt="back-btn-icon"
+            className="back-btn"
+            onClick={() => {
+              setShowNotesChat(false);
+              setShowGrpNavigation(true);
+            }}
+          />
+        </span>
         <div
           className="notes-grp-icon"
           style={{ backgroundColor: `${currentGrp?.Colour}` }}

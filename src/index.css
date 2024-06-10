@@ -43,6 +43,8 @@ align-items: center;
     background:grey;
   }
 
-
+.hidden{
+  display: none !important;
+}
 
  
